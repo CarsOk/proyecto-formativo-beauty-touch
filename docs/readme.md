@@ -9,7 +9,7 @@
 
 ### Entrevistas
 
-- [Entrevista Gerente]()
+- [Entrevista Gerente](entrevista.md)
 - [Entrevista contabilidad]()
 
 ### Graficas
