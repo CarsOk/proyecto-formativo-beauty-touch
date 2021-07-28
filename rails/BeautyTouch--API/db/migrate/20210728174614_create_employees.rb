@@ -6,7 +6,7 @@ class CreateEmployees < ActiveRecord::Migration[6.1]
       t.string :Name2_Emp
       t.string :LastName1_Emp
       t.string :LastName2_Emp
-      t.date :Birthay_Emp
+      t.date :Birthday_Emp
       t.int :Cellphone_Emp
       t.string :Email_Emp
       t.string :Password_Emp
