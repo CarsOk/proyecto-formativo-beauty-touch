@@ -6,7 +6,7 @@ one:
   Name2_Emp: MyString
   LastName1_Emp: MyString
   LastName2_Emp: MyString
-  Birthay_Emp: 2021-07-28
+  Birthday_Emp: 2021-07-28
   Cellphone_Emp: 
   Email_Emp: MyString
   Password_Emp: MyString
@@ -19,7 +19,7 @@ two:
   Name2_Emp: MyString
   LastName1_Emp: MyString
   LastName2_Emp: MyString
-  Birthay_Emp: 2021-07-28
+  Birthday_Emp: 2021-07-28
   Cellphone_Emp: 
   Email_Emp: MyString
   Password_Emp: MyString
