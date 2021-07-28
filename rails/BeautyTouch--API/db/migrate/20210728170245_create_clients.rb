@@ -6,7 +6,7 @@ class CreateClients < ActiveRecord::Migration[6.1]
       t.string :Name2_Cli
       t.string :LastName1_Cli
       t.string :LastName2_Cli
-      t.date :Birthay_Cli
+      t.date :Birthday_Cli
       t.int :Cellphone_Cli
       t.string :Email_Cli
       t.string :Password_Cli
