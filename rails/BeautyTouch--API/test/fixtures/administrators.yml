@@ -6,7 +6,7 @@ one:
   Name2_Adm: MyString
   LastName1_Adm: MyString
   LastName2_Adm: MyString
-  Birthay_Adm: 2021-07-28
+  Birthday_Adm: 2021-07-28
   Cellphone_Adm: 
   Email_Adm: MyString
   Password_Adm: MyString
@@ -17,7 +17,7 @@ two:
   Name2_Adm: MyString
   LastName1_Adm: MyString
   LastName2_Adm: MyString
-  Birthay_Adm: 2021-07-28
+  Birthday_Adm: 2021-07-28
   Cellphone_Adm: 
   Email_Adm: MyString
   Password_Adm: MyString
