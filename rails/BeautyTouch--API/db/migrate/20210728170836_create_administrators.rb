@@ -6,7 +6,7 @@ class CreateAdministrators < ActiveRecord::Migration[6.1]
       t.string :Name2_Adm
       t.string :LastName1_Adm
       t.string :LastName2_Adm
-      t.date :Birthay_Adm
+      t.date :Birthday_Adm
       t.int :Cellphone_Adm
       t.string :Email_Adm
       t.string :Password_Adm
