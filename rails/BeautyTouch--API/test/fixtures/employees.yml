@@ -1,0 +1,27 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  Id_Emp: 
+  Name1_Emp: MyString
+  Name2_Emp: MyString
+  LastName1_Emp: MyString
+  LastName2_Emp: MyString
+  Birthay_Emp: 2021-07-28
+  Cellphone_Emp: 
+  Email_Emp: MyString
+  Password_Emp: MyString
+  WorkArea_Emp: MyString
+  direction_Emp: MyString
+
+two:
+  Id_Emp: 
+  Name1_Emp: MyString
+  Name2_Emp: MyString
+  LastName1_Emp: MyString
+  LastName2_Emp: MyString
+  Birthay_Emp: 2021-07-28
+  Cellphone_Emp: 
+  Email_Emp: MyString
+  Password_Emp: MyString
+  WorkArea_Emp: MyString
+  direction_Emp: MyString
