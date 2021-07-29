@@ -4,34 +4,58 @@
 
 import 'dart:convert';
 
-UserShow userShowFromJson(String str) => UserShow.fromJson(json.decode(str));
+ClientShow clientShowFromJson(String str) =>
+    ClientShow.fromJson(json.decode(str));
 
-String userShowToJson(UserShow data) => json.encode(data.toJson());
+String clientShowToJson(ClientShow data) => json.encode(data.toJson());
 
-class UserShow {
-  UserShow({
-    this.id,
-    this.name,
-    this.email,
-    this.year,
+class ClientShow {
+  ClientShow({
+    this.id_Cli,
+    this.name1_cli,
+    this.name2_Cli,
+    this.lastName1_Cli,
+    this.lastName2_Cli,
+    this.birthday_Cli,
+    this.cellphone_Cli,
+    this.email_Cli,
+    this.password_Cli,
+    this.direction_Cli,
   });
 
-  int id;
-  String name;
-  String email;
-  int year;
+  int id_Cli;
+  String name1_cli;
+  String name2_Cli;
+  String lastName1_Cli;
+  String lastName2_Cli;
+  String birthday_Cli;
+  int cellphone_Cli;
+  String email_Cli;
+  String password_Cli;
+  String direction_Cli;
 
-  factory UserShow.fromJson(Map<String, dynamic> json) => UserShow(
-        id: json["id"],
-        name: json["name"],
-        email: json["email"],
-        year: json["year"],
-      );
+  factory ClientShow.fromJson(Map<String, dynamic> json) => ClientShow(
+      id_Cli: json["id_Cli"],
+      name1_cli: json["Name1_Cli"],
+      name2_Cli: json["Name2_Cli"],
+      lastName1_Cli: json["LastName1_Cli"],
+      lastName2_Cli: json["LastName2_cli"],
+      birthday_Cli: json["Birthday_Cli"],
+      cellphone_Cli: json["cellphone_cli"],
+      email_Cli: json["Email_Cli"],
+      password_Cli: json["password_Cli"],
+      direction_Cli: json["direction_clie"]);
 
   Map<String, dynamic> toJson() => {
-        "id": id,
-        "name": name,
-        "email": email,
-        "year": year,
+        "id_Cli": id_Cli,
+        "Name1_Cli": name1_cli,
+        "Name2_Cli": name2_Cli,
+        "LastName1_Cli": lastName1_Cli,
+        "LastName2_cli": lastName2_Cli,
+        "Birthday_Cli": birthday_Cli,
+        "cellphone_cli": cellphone_Cli,
+        "Email_Cli": email_Cli,
+        "password_Cli": password_Cli,
+        "direction_clie": direction_Cli
       };
 }

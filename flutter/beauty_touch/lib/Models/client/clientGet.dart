@@ -59,6 +59,6 @@ class Client {
         "cellphone_cli": cellphone_Cli,
         "Email_Cli": email_Cli,
         "password_Cli": password_Cli,
-        "direction_clie": direction_clie
+        "direction_clie": direction_Cli
       };
 }
