@@ -22,7 +22,7 @@ class Client {
     this.birthday_Cli,
     this.cellphone_Cli,
     this.email_Cli,
-    this.Password_Cli,
+    this.password_Cli,
     this.direction_Cli,
   });
 
