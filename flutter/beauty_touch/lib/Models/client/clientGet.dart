@@ -34,7 +34,7 @@ class Client {
   String birthday_Cli;
   int cellphone_Cli;
   String email_Cli;
-  String Password_Cli;
+  String password_Cli;
   String direction_Cli;
 
   factory Client.fromJson(Map<String, dynamic> json) => Client(
@@ -46,7 +46,7 @@ class Client {
       birthday_Cli: json["Birthday_Cli"],
       cellphone_Cli: json["cellphone_cli"],
       email_Cli: json["Email_Cli"],
-      Password_Cli: json["password_Cli"],
+      password_Cli: json["password_Cli"],
       direction_Cli: json["direction_clie"]);
 
   Map<String, dynamic> toJson() => {
@@ -58,7 +58,7 @@ class Client {
         "Birthday_Cli": birthday_Cli,
         "cellphone_cli": cellphone_Cli,
         "Email_Cli": email_Cli,
-        "password_Cli": Password_Cli,
+        "password_Cli": password_Cli,
         "direction_clie": direction_clie
       };
 }
