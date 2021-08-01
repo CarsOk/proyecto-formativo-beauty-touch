@@ -33,7 +33,37 @@ class CreateAcount extends StatelessWidget {
                 decoration: InputDecoration(
                     icon: Icon(Icons.account_circle,
                         color: Color.fromRGBO(255, 117, 020, 1)),
-                    hintText: 'Nombre completo'),
+                    hintText: 'primer nombre'),
+              ),
+              SizedBox(
+                height: 20,
+              ),
+              TextFormField(
+                onChanged: (valor) => comment.name2_Cli = valor,
+                decoration: InputDecoration(
+                    icon: Icon(Icons.account_circle,
+                        color: Color.fromRGBO(255, 117, 020, 1)),
+                    hintText: 'segundo nombre'),
+              ),
+              SizedBox(
+                height: 20,
+              ),
+              TextFormField(
+                onChanged: (valor) => comment.lastName1_Cli = valor,
+                decoration: InputDecoration(
+                    icon: Icon(Icons.account_circle,
+                        color: Color.fromRGBO(255, 117, 020, 1)),
+                    hintText: 'primer apellido'),
+              ),
+              SizedBox(
+                height: 20,
+              ),
+              TextFormField(
+                onChanged: (valor) => comment.lastName2_Cli = valor,
+                decoration: InputDecoration(
+                    icon: Icon(Icons.account_circle,
+                        color: Color.fromRGBO(255, 117, 020, 1)),
+                    hintText: 'segundo apellido'),
               ),
               SizedBox(
                 height: 20,
@@ -68,13 +98,23 @@ class CreateAcount extends StatelessWidget {
                 decoration: InputDecoration(
                     icon: Icon(Icons.calendar_today,
                         color: Color.fromRGBO(255, 117, 020, 1)),
-                    hintText: 'No. de edad'),
+                    hintText: 'fecha de nacimiento'),
               ),
               SizedBox(
                 height: 20,
               ),
               TextFormField(
-                onChanged: (valor) => comment.Password_Cli = valor,
+                onChanged: (valor) => comment.direction_Cli = valor,
+                decoration: InputDecoration(
+                    icon: Icon(Icons.account_circle,
+                        color: Color.fromRGBO(255, 117, 020, 1)),
+                    hintText: 'dirección'),
+              ),
+              SizedBox(
+                height: 20,
+              ),
+              TextFormField(
+                onChanged: (valor) => comment.password_Cli = valor,
                 decoration: InputDecoration(
                     icon: Icon(Icons.lock,
                         color: Color.fromRGBO(255, 117, 020, 1)),
