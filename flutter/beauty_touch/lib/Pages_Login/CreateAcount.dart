@@ -49,7 +49,7 @@ class CreateAcount extends StatelessWidget {
                 height: 20,
               ),
               TextFormField(
-                onChanged: (valor) => comment.lastName1_Cli = valor,
+                onChanged: (valor) => comment.last1_Cli = valor,
                 decoration: InputDecoration(
                     icon: Icon(Icons.account_circle,
                         color: Color.fromRGBO(255, 117, 020, 1)),
@@ -59,7 +59,7 @@ class CreateAcount extends StatelessWidget {
                 height: 20,
               ),
               TextFormField(
-                onChanged: (valor) => comment.lastName2_Cli = valor,
+                onChanged: (valor) => comment.last2_Cli = valor,
                 decoration: InputDecoration(
                     icon: Icon(Icons.account_circle,
                         color: Color.fromRGBO(255, 117, 020, 1)),
@@ -109,6 +109,16 @@ class CreateAcount extends StatelessWidget {
                     icon: Icon(Icons.account_circle,
                         color: Color.fromRGBO(255, 117, 020, 1)),
                     hintText: 'dirección'),
+              ),
+              SizedBox(
+                height: 20,
+              ),
+              TextFormField(
+                onChanged: (valor) => comment.cellphone_Cli = valor,
+                decoration: InputDecoration(
+                    icon: Icon(Icons.account_circle,
+                        color: Color.fromRGBO(255, 117, 020, 1)),
+                    hintText: 'Telefono'),
               ),
               SizedBox(
                 height: 20,
