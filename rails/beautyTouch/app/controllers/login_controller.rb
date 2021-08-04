@@ -1,6 +1,6 @@
 class LoginController < ApplicationController
     def logueo
-        user = Client.where(Id_Cli: params[:Id_Cli], Password_Cli: params[:Password_Cli])
+        user = Client.where(id_Cli: params[:id_Cli], password_Cli: params[:password_Cli])
         if user.present?
         render json: user, status: 200
         else

@@ -5,22 +5,22 @@ class RegistratorController < ApplicationController
     end
     def create
           registrar = Client.create(
-            Id_Cli: params[:Id_Cli],
-            Name1_cli: params[:Name1_cli],
-            Name2_Cli: params[:Name2_Cli],
-            LastName1_Cli: params[:LastName1_Cli],
-            LastName2_Cli: params[:LastName2_Cli],
-            Birthday_Cli: params[:Birthday_Cli],
-            Cellphone_Cli: params[:Cellphone_Cli],
-            Email_Cli: params[:Email_Cli],
-            Password_Cli: params[:Password_Cli],
-            Direction_Cli: params[:direction_Cli],
+            id_Cli: params[:id_Cli],
+            name1_Cli: params[:name1_Cli],
+            name2_Cli: params[:name2_Cli],
+            last1_Cli: params[:last1_Cli],
+            last2_Cli: params[:last2_Cli],
+            birthday_Cli: params[:birthday_Cli],
+            cellphone_Cli: params[:cellphone_Cli],
+            email_Cli: params[:email_Cli],
+            password_Cli: params[:password_Cli],
+            direction_Cli: params[:direction_Cli],
           )
           render json: registrar, status: 201
     end
       
     def show
-        registrar = Client.find(params[:Id_Cli])
+        registrar = Client.find(params[:id_Cli])
         render json: registrar, estatus: 200
     end
       
