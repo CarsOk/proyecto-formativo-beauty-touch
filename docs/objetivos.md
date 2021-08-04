@@ -6,8 +6,7 @@
 La empresa Beauty Touch maneja todo su proceso administrativo a través de papeleos, sin contar con un sistema informático, que implemente una  base de datos para guardar información. Todo lo hacen mediante documentos Físicos, alejándolos un poco de las tecnologías que hoy en día son muy importantes por qué nos facilitan el manejo de la información y además nos ayuda a reducir el tiempo de trabajo.
 
 No cuenta con una pagina web que los ayude a implementar  publicidad y facilite la comunicación empresa usuario, lo que conlleva a sacarlos un poco del mercado publicitario.
- |
- `3` | **Justificación del proyecto.**|Con la aplicación de nuestro proyecto daremos un orden al manejo administrativo logrando que el tiempo de trabajo se optimice realizando búsquedas de información más rápida y precisa, garantizando en todo momento  que la información está segura. Además de garantizar a la empresa un medio para que el cliente interactúe con la empresa.|
+ |`3` | **Justificación del proyecto.**|Con la aplicación de nuestro proyecto daremos un orden al manejo administrativo logrando que el tiempo de trabajo se optimice realizando búsquedas de información más rápida y precisa, garantizando en todo momento  que la información está segura. Además de garantizar a la empresa un medio para que el cliente interactúe con la empresa.|
  | `4` | **Objetivo general.**|Creación de un sistema integrado para la salud que sea cómodo y amigable  para el usuario. |
  | `5` | **Objetivos específicos**|* Implementación de página web 
 * Creación Sistema de inventario 
