@@ -4,13 +4,13 @@ class CreateClients < ActiveRecord::Migration[6.1]
       t.integer :id_Cli
       t.string :name1_Cli
       t.string :name2_Cli
-      t.string :lastName1_cli
-      t.string :lastName2_cli
-      t.date :birthday_Cli
-      t.integer :Cellphone_Cli
-      t.string :Email_Cli
-      t.string :Password_Cli
-      t.string :Direction_Cli
+      t.string :last1_Cli
+      t.string :last2_Cli
+      t.string :birthday_Cli
+      t.integer :cellphone_Cli
+      t.string :email_Cli
+      t.string :password_Cli
+      t.string :direction_Cli
 
       t.timestamps
     end
