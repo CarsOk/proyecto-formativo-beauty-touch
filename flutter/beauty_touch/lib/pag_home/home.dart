@@ -1,6 +1,6 @@
 import 'package:beauty_touch/pag_home/home1.dart';
 import 'package:beauty_touch/pag_home/home2.dart';
-import 'package:beauty_touch/pag_home/home3.dart';
+import 'package:beauty_touch/pag_home/users.dart';
 import 'package:flutter/material.dart';
 
 void main() => runApp(Home());
@@ -12,7 +12,7 @@ class Home extends StatefulWidget {
 
 class _HomeState extends State<Home> {
   int _pagActual = 0;
-  List<Widget> _paginas = [Home1(), Home2(), Home3()];
+  List<Widget> _paginas = [Home1(), Home2(), Users()];
   @override
   Widget build(BuildContext context) {
     return MaterialApp(

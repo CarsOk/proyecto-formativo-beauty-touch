@@ -29,7 +29,7 @@ class CreateAcount extends StatelessWidget {
                 height: 40,
               ),
               TextFormField(
-                onChanged: (valor) => comment.name1_cli = valor,
+                onChanged: (valor) => comment.name1_Cli = valor,
                 decoration: InputDecoration(
                     icon: Icon(Icons.account_circle,
                         color: Color.fromRGBO(255, 117, 020, 1)),
