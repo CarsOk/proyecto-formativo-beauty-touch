@@ -1,0 +1,21 @@
+{
+    // Use IntelliSense para saber los atributos posibles.
+    // Mantenga el puntero para ver las descripciones de los existentes atributos.
+    // Para más información, visite: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "beauty_touch",
+            "cwd": "flutter\\beauty_touch",
+            "request": "launch",
+            "type": "dart"
+        },
+        {
+            "name": "beauty_touch (profile mode)",
+            "cwd": "flutter\\beauty_touch",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "profile"
+        }
+    ]
+}
