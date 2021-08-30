@@ -4,6 +4,8 @@ import 'package:flutter/material.dart';
 
 class CreateAcount extends StatelessWidget {
   final comment = CommentPost();
+  final _controller1 = TextEditingController();
+  final _controller2 = TextEditingController();
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -70,7 +72,7 @@ class CreateAcount extends StatelessWidget {
               ),
               TextFormField(
                 keyboardType: TextInputType.emailAddress,
-                onChanged: (valor) => comment.email_Cli = valor,
+                onChanged: (valor) => comment.email = valor,
                 decoration: InputDecoration(
                     icon: Icon(
                       Icons.mail,
@@ -124,7 +126,8 @@ class CreateAcount extends StatelessWidget {
                 height: 20,
               ),
               TextFormField(
-                onChanged: (valor) => comment.password_Cli = valor,
+                controller: _controller1,
+                onChanged: (valor) => comment.password = valor,
                 decoration: InputDecoration(
                     icon: Icon(Icons.lock,
                         color: Color.fromRGBO(255, 117, 020, 1)),
@@ -133,6 +136,18 @@ class CreateAcount extends StatelessWidget {
               SizedBox(
                 height: 20,
               ),
+              TextFormField(
+                  controller: _controller2,
+                  onChanged: (valor) => comment.password_confirmation = valor,
+                  decoration: InputDecoration(
+                      icon: Icon(Icons.lock,
+                          color: Color.fromRGBO(255, 117, 020, 1)),
+                      hintText: 'Confrimar contraseña'),
+                  validator: (valor) {
+                    if (valor != _controller1) {
+                      return 'las contraseñas no coinciden';
+                    }
+                  }),
               SizedBox(
                 height: 20,
               ),
