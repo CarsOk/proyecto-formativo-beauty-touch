@@ -11,20 +11,20 @@ String logginClientPostToJson(Comment data) => json.encode(data.toJson());
 
 class Comment {
   Comment({
-    this.password_Cli,
+    this.password,
     this.id_Cli,
   });
 
-  String password_Cli;
+  String password;
   String id_Cli;
 
   factory Comment.fromJson(Map<String, dynamic> json) => Comment(
-        password_Cli: json["password_Cli"],
+        password: json["password"],
         id_Cli: json["id_Cli"].toString(),
       );
 
   Map<String, dynamic> toJson() => {
-        "password_Cli": password_Cli,
+        "password": password,
         "id_Cli": id_Cli,
       };
 }

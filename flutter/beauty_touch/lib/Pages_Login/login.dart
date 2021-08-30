@@ -3,13 +3,15 @@ import 'dart:ui';
 import 'package:beauty_touch/Models/Login_Clien_Json_Post.dart';
 import 'package:beauty_touch/Models/Login_Client_Post.dart';
 import 'package:beauty_touch/pag_home/home.dart';
-import 'package:beauty_touch/pag_home/users.dart';
+
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 
 import 'linkToCreateAccount.dart';
 
 class Login extends StatelessWidget {
+  SharedPreferences sharedPreferences;
   final comment = Comment();
   final formKey = new GlobalKey<FormState>();
   final user = TextEditingController();
@@ -68,7 +70,7 @@ class Login extends StatelessWidget {
                       controller: passwor,
                       validator: (valor) =>
                           valor.length < 1 ? 'Contraseña no valida' : null,
-                      onChanged: (valor) => comment.password_Cli = valor,
+                      onChanged: (valor) => comment.password = valor,
                       decoration: InputDecoration(
                           icon: Icon(
                             Icons.lock,
@@ -97,18 +99,19 @@ class Login extends StatelessWidget {
                               user.text = "";
                               passwor.text = "";
                               form.save();
-                              prints("teddys");
                               comentarios = await loggin(comment.toJson());
-                              if (comentarios != null) {
+                              if (sharedPreferences.getString("token") !=
+                                  null) {
                                 Future.delayed(
-                                    const Duration(milliseconds: 1000), () {
+                                    const Duration(milliseconds: 100), () {
                                   Navigator.of(context).pushReplacement(
                                       MaterialPageRoute(builder: (context) {
                                     return Home();
                                   }));
                                 });
                               }
-                              if (comentarios == null) {
+                              if (sharedPreferences.getString("token") ==
+                                  null) {
                                 showDialog(
                                     context: context,
                                     builder: (BuildContext context) {

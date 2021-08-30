@@ -18,8 +18,9 @@ class CommentPost {
     this.last2_Cli,
     this.birthday_Cli,
     this.cellphone_Cli,
-    this.email_Cli,
-    this.password_Cli,
+    this.email,
+    this.password,
+    this.password_confirmation,
     this.direction_Cli,
   });
 
@@ -30,8 +31,9 @@ class CommentPost {
   String last2_Cli;
   String birthday_Cli;
   String cellphone_Cli;
-  String email_Cli;
-  String password_Cli;
+  String email;
+  String password;
+  String password_confirmation;
   String direction_Cli;
 
   factory CommentPost.fromJson(Map<String, dynamic> json) => CommentPost(
@@ -42,8 +44,9 @@ class CommentPost {
       last2_Cli: json["last2_Cli"],
       birthday_Cli: json["birthday_Cli"],
       cellphone_Cli: json["cellphone_Cli"].toString(),
-      email_Cli: json["email_Cli"],
-      password_Cli: json["password_Cli"],
+      email: json["email"],
+      password: json["password"],
+      password_confirmation: json["password_confirmation"],
       direction_Cli: json["direction_Cli"]);
 
   Map<String, dynamic> toJson() => {
@@ -54,8 +57,9 @@ class CommentPost {
         "last2_Cli": last2_Cli,
         "birthday_Cli": birthday_Cli,
         "cellphone_Cli": cellphone_Cli,
-        "email_Cli": email_Cli,
-        "password_Cli": password_Cli,
+        "email_Cli": email,
+        "password_Cli": password,
+        "password_confirmation": password_confirmation,
         "direction_Cli": direction_Cli
       };
 }

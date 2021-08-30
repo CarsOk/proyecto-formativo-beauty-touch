@@ -1,3 +1,4 @@
+import 'package:beauty_touch/services/checkLosginStatus.dart';
 import 'package:flutter/material.dart';
 
 import 'Pages_Login/Login.dart';
@@ -15,9 +16,10 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
-      home: Login(),
+      home: CheckLogin(),
       routes: {
         'login': (context) => Login(),
+        'CheckLogin': (context) => CheckLogin(),
       },
     );
   }
